@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./assets/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Pedra, papel, tesoura, lagarto e Spock</title>
+</head>
+
+<body>
+    <main class="colunas">
+        <section class="container">
+            <h1>Pedra, papel, tesoura, lagarto e Spock</h1>
+
+            <!-- Input nome do jogador -->
+
+            <div id="playerBox" class="player-box">
+                <label for="player">Qual é o seu nome?</label>
+                <input type="text" id="playerName" class="input">
+                <button type="button" id="getPlayerName" class="btn">OK</button>
+            </div>
+
+            <!-- Regras -->
+
+            <div class="regras">
+                <h3>Regras do jogo:</h3>
+                <p>Escolha uma das opções:</p>
+                <p>pedra</p>
+                <p>papel</p>
+                <p>tesoura</p>
+                <p>lagarto</p>
+                <p>spock</p>
+
+                <h3>O vencedor será decidido baseado nas combinações abaixo:</h3>
+
+                <p>Tesoura corta papel</p>
+                <p>Papel cobre pedra</p>
+                <p>Pedra esmaga lagarto</p>
+                <p>Lagarto envenena Spock</p>
+                <p>Spock quebra tesoura</p>
+                <p>Tesoura decapita lagarto</p>
+                <p>Lagarto come papel</p>
+                <p>Papel desqualifica Spock</p>
+                <p>Spock vaporiza pedra</p>
+                <p>Pedra esmaga tesoura</p>
+            </div>
+        </section>
+
+        <!-- Select escolha do jogador -->
+        <section class="container">
+            <div id="saudacao"></div>
+            <form class="jogo">
+                <label>Escolha</label>
+                <select id="escolha" name="escolha">
+                    <option value="default" selected></option>
+                    <option value="pedra">Pedra</option>
+                    <option value="papel">Papel</option>
+                    <option value="tesoura">Tesoura</option>
+                    <option value="lagarto">Lagarto</option>
+                    <option value="spock">Spock</option>
+                </select>
+            </form>
+            <div id="result"></div>
+        </section>
+    </main>
+</body>
+
+</html>
